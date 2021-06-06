@@ -1,0 +1,22 @@
+docker --help
+docker info
+docker pull <image:tagname>
+docker image ls
+docker run --name <name> -p <portexpose:portmap> -d <detached/daemon> <imagename/id:tagname>
+docker container ls / docker ps
+docker ps -a
+docker ps -aq
+docker build --tag <name:tag> .
+docker --tag <existing image:existing tag> <new image name:new tag>
+docker rm <container id/name>
+docker rm -f <container id/name>
+docker rm -f $(docker ps -aq)
+docker image rm <image name/id>
+docker push <dockerhub id(slash)/image name: tagname>
+docker logs <container id/ name>
+docker inspect <container id/ name>
+docker exec -it <container id> /bin/bash
+docker exec -it <container id> sh
+docker logs -f <container id>
+docker <command> --help
+
