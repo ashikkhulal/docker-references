@@ -3,6 +3,7 @@ docker info
 docker pull <image:tagname>
 docker image ls
 docker run --name <name> -p <portexpose:portmap> -d <detached/daemon> <imagename/id:tagname>
+docker run --name <name> -p <portexpose:portmap> -d <detached/daemon> -v <local path: path in conatiner> <imagename/id:tagname>
 docker container ls / docker ps
 docker ps -a
 docker ps -aq
